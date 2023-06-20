@@ -1,0 +1,248 @@
+html,
+body {
+    margin: 0;
+    /* 余白の削除 */
+    padding: 0;
+    /* 余白の削除 */
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+
+}
+
+.wrapper {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    /*←相対位置*/
+    padding-bottom: 120px;
+    /*←footerの高さ*/
+    box-sizing: border-box;
+    /*←全て含めてmin-height:100vhに*/
+}
+
+header {
+    position: fixed;
+    /* ヘッダーの固定 */
+    top: 0px;
+    /* 位置(上0px) */
+    left: 0px;
+    /* 位置(右0px) */
+    width: 100%;
+    /* 横幅100%　*/
+    height: 140px;
+    /* 縦幅140px */
+    z-index: 100;
+}
+
+div .header-body {
+    background-color: #a7c1c7;
+    padding: 10px 0 20px;
+    /* 上10px、下20pxをあける */
+    height: 110px;
+    /* 縦の高さ110px */
+    width: 100%;
+    /* 横の幅を100% */
+}
+
+div .header-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    /* border: 5px solid #fff; */
+    /* 表示領域を白枠で囲う */
+    z-index: 100;
+    /* 縦の表示領域はheader-bkと同じ */
+    width: 95%;
+    /* 横の幅970px */
+    margin: auto;
+    /* 中央揃え */
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.header-button-wrapper{
+    
+    padding-top: 10px;
+    width: 75%;
+}
+.header-button{
+    margin-left: 2%;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+
+    border: 1px solid #ccc;
+    background: #f1e767;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+    -webkit-box-shadow: inset 1px 1px 1px #fff;
+    box-shadow: inset 1px 1px 1px #fff;
+}
+.header-button:hover{
+    background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+    background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+  
+}
+
+.user-data{
+    margin-left: auto;
+    padding-top: 20px;
+    width: 150px;
+    display:flex;
+    flex-flow: column;
+}
+
+.logout-button{
+
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .main {
+    position: relative;
+    padding: 200px 0 200px 0;
+    z-index: 5;
+}
+
+div .main-body {
+    width: 85%;
+    margin: auto;
+    display: flex;
+
+}
+.main-content {
+    width: 80%;
+    background-color: #fff;
+    height: 100%;
+
+}
+
+.profile-table{
+    width: 80%;
+    margin: 2em auto;
+}
+
+.profile-table-body th{
+    width: 40%;
+}
+.profile-table-body td{
+    width: 60%;
+    text-align: center;
+}
+
+.profile-table-body th,td{
+    border: solid 1px;
+}
+
+
+
+.profile-table{
+    border-collapse:  collapse;
+}
+
+.content-title {
+    padding: 0.2rem;
+    background: linear-gradient(transparent 80%, #66ccff 90%);
+    font-weight: bold;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+
+/*左上に背景色ありタイトル*/
+.content-box {
+    margin: 2em auto;
+    /* ボックスの余白 */
+    background-color: #ebebeb;
+    /* ボックス背景色 */
+    padding: 3em 2em 2em;
+    /* ボックス内側余白 */
+    /* 配置(ここを基準に)*/
+    border: 1px solid #909792;
+    position: relative;
+    /* ボックスの線 (太さ　種類　色)*/
+    width: 80%;
+    z-index: 10;
+}
+
+.content-box .content-box-title {
+    background-color: #909792;
+    /* タイトル背景色 */
+    font-size: 1em;
+    /* タイトル文字の大きさ */
+    color: #fff;
+    /* タイトル文字色 */
+    padding: 7px 10px;
+    /*タイトルの余白*/
+    line-height: 1;
+    position: absolute;
+    /*タイトルの行の高さ*/
+    /* 配置(ここを動かす) */
+    top: 0;
+    /*上から（0px）移動*/
+    left: 0;
+    /*左から(0px)移動*/
+}
+
+.right-column {
+    height: 100%;
+    top: 160px;
+    width: 20%;
+    text-align: center;
+    margin: 0 0 0 2%;
+}
+
+.right-column-box {
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.right-column-box h4 {
+    margin: 0 0 5px 0;
+}
+
+
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    /*←絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+    z-index: 100;
+}
